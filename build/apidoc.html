@@ -1,0 +1,453 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/vesse/passport-ldapauth#readme"
+
+    >passport-ldapauth (v1.0.0)</a>
+</h1>
+<h4>LDAP authentication strategy for Passport</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-ldapauth">module passport-ldapauth</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.passport-ldapauth">
+            function <span class="apidocSignatureSpan"></span>passport-ldapauth
+            <span class="apidocSignatureSpan">(options, verify)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.Strategy">
+            function <span class="apidocSignatureSpan">passport-ldapauth.</span>Strategy
+            <span class="apidocSignatureSpan">(options, verify)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.super_">
+            function <span class="apidocSignatureSpan">passport-ldapauth.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">passport-ldapauth.</span>Strategy.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">passport-ldapauth.</span>super_.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-ldapauth.Strategy">module passport-ldapauth.Strategy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.Strategy.Strategy">
+            function <span class="apidocSignatureSpan">passport-ldapauth.</span>Strategy
+            <span class="apidocSignatureSpan">(options, verify)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.Strategy.super_">
+            function <span class="apidocSignatureSpan">passport-ldapauth.Strategy.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-ldapauth.Strategy.prototype">module passport-ldapauth.Strategy.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.Strategy.prototype.authenticate">
+            function <span class="apidocSignatureSpan">passport-ldapauth.Strategy.prototype.</span>authenticate
+            <span class="apidocSignatureSpan">(req, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-ldapauth.super_">module passport-ldapauth.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.super_.super_">
+            function <span class="apidocSignatureSpan">passport-ldapauth.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.super_.Strategy">
+            function <span class="apidocSignatureSpan">passport-ldapauth.super_.</span>Strategy
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.passport-ldapauth.super_.prototype">module passport-ldapauth.super_.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.passport-ldapauth.super_.prototype.authenticate">
+            function <span class="apidocSignatureSpan">passport-ldapauth.super_.prototype.</span>authenticate
+            <span class="apidocSignatureSpan">(req, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-ldapauth" id="apidoc.module.passport-ldapauth">module passport-ldapauth</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.passport-ldapauth" id="apidoc.element.passport-ldapauth.passport-ldapauth">
+        function <span class="apidocSignatureSpan"></span>passport-ldapauth
+        <span class="apidocSignatureSpan">(options, verify)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">passport-ldapauth = function (options, verify) {
+  // We now accept function as options as well so we cannot assume anymore
+  // that a call with a function parameter only would have skipped options
+  // and just provided a verify callback
+  if (!options) {
+    throw new Error(&#x27;LDAP authentication strategy requires options&#x27;);
+  }
+
+  this.options    = null;
+  this.getOptions = null;
+
+  if (typeof options === &#x27;object&#x27;) {
+    this.options = setDefaults(options);
+  } else if (typeof options === &#x27;function&#x27;) {
+    this.getOptions = options;
+  }
+
+  passport.Strategy.call(this);
+
+  this.name   = &#x27;ldapauth&#x27;;
+  this.verify = verify;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.Strategy" id="apidoc.element.passport-ldapauth.Strategy">
+        function <span class="apidocSignatureSpan">passport-ldapauth.</span>Strategy
+        <span class="apidocSignatureSpan">(options, verify)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Strategy = function (options, verify) {
+  // We now accept function as options as well so we cannot assume anymore
+  // that a call with a function parameter only would have skipped options
+  // and just provided a verify callback
+  if (!options) {
+    throw new Error(&#x27;LDAP authentication strategy requires options&#x27;);
+  }
+
+  this.options    = null;
+  this.getOptions = null;
+
+  if (typeof options === &#x27;object&#x27;) {
+    this.options = setDefaults(options);
+  } else if (typeof options === &#x27;function&#x27;) {
+    this.getOptions = options;
+  }
+
+  passport.Strategy.call(this);
+
+  this.name   = &#x27;ldapauth&#x27;;
+  this.verify = verify;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.super_" id="apidoc.element.passport-ldapauth.super_">
+        function <span class="apidocSignatureSpan">passport-ldapauth.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-ldapauth.Strategy" id="apidoc.module.passport-ldapauth.Strategy">module passport-ldapauth.Strategy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.Strategy.Strategy" id="apidoc.element.passport-ldapauth.Strategy.Strategy">
+        function <span class="apidocSignatureSpan">passport-ldapauth.</span>Strategy
+        <span class="apidocSignatureSpan">(options, verify)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Strategy = function (options, verify) {
+  // We now accept function as options as well so we cannot assume anymore
+  // that a call with a function parameter only would have skipped options
+  // and just provided a verify callback
+  if (!options) {
+    throw new Error(&#x27;LDAP authentication strategy requires options&#x27;);
+  }
+
+  this.options    = null;
+  this.getOptions = null;
+
+  if (typeof options === &#x27;object&#x27;) {
+    this.options = setDefaults(options);
+  } else if (typeof options === &#x27;function&#x27;) {
+    this.getOptions = options;
+  }
+
+  passport.Strategy.call(this);
+
+  this.name   = &#x27;ldapauth&#x27;;
+  this.verify = verify;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.Strategy.super_" id="apidoc.element.passport-ldapauth.Strategy.super_">
+        function <span class="apidocSignatureSpan">passport-ldapauth.Strategy.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-ldapauth.Strategy.prototype" id="apidoc.module.passport-ldapauth.Strategy.prototype">module passport-ldapauth.Strategy.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.Strategy.prototype.authenticate" id="apidoc.element.passport-ldapauth.Strategy.prototype.authenticate">
+        function <span class="apidocSignatureSpan">passport-ldapauth.Strategy.prototype.</span>authenticate
+        <span class="apidocSignatureSpan">(req, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">authenticate = function (req, options) {
+  if ((typeof this.options === &#x27;object&#x27;) &#x26;&#x26; (!this.getOptions)) {
+    return handleAuthentication.call(this, req, options);
+  }
+
+  var callback = function(err, configuration) {
+    if (err) return this.fail(err);
+
+    this.options = setDefaults(configuration);
+    handleAuthentication.call(this, req, options);
+  };
+
+  // Added functionality: getOptions can accept now up to 2 parameters
+  if (this.getOptions.length ===1) { // Accepts 1 parameter, backwards compatibility
+    this.getOptions(callback.bind(this));
+  } else { // Accepts 2 parameters, pass request as well
+    this.getOptions(req, callback.bind(this));
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+         }
+       ));
+
+Note: you can pass a function instead of an object as `options`, see the [example below](#options-as-function)
+
+### Authenticate requests
+
+Use `passport.<span class="apidocCodeKeywordSpan">authenticate</span>()`, specifying the `&#x27;ldapauth&#x27;` strategy, to authenticate
+ requests.
+
+#### `authenticate()` options
+
+In addition to [default authentication options](http://passportjs.org/guide/authenticate/) the following flash message options are
+ available for `passport.authenticate()`:
+
+* `badRequestMessage`: missing username/password (default: &#x27;Missing credentials&#x27;)
+* `invalidCredentials`: `InvalidCredentialsError`, `NoSuchObjectError`, and `/no such user/i` LDAP errors (default: &#x27;Invalid
+ username/password&#x27;)
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-ldapauth.super_" id="apidoc.module.passport-ldapauth.super_">module passport-ldapauth.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.super_.super_" id="apidoc.element.passport-ldapauth.super_.super_">
+        function <span class="apidocSignatureSpan">passport-ldapauth.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.super_.Strategy" id="apidoc.element.passport-ldapauth.super_.Strategy">
+        function <span class="apidocSignatureSpan">passport-ldapauth.super_.</span>Strategy
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Strategy() {
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.passport-ldapauth.super_.prototype" id="apidoc.module.passport-ldapauth.super_.prototype">module passport-ldapauth.super_.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.passport-ldapauth.super_.prototype.authenticate" id="apidoc.element.passport-ldapauth.super_.prototype.authenticate">
+        function <span class="apidocSignatureSpan">passport-ldapauth.super_.prototype.</span>authenticate
+        <span class="apidocSignatureSpan">(req, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">authenticate = function (req, options) {
+  throw new Error(&#x27;Strategy#authenticate must be overridden by subclass&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+         }
+       ));
+
+Note: you can pass a function instead of an object as `options`, see the [example below](#options-as-function)
+
+### Authenticate requests
+
+Use `passport.<span class="apidocCodeKeywordSpan">authenticate</span>()`, specifying the `&#x27;ldapauth&#x27;` strategy, to authenticate
+ requests.
+
+#### `authenticate()` options
+
+In addition to [default authentication options](http://passportjs.org/guide/authenticate/) the following flash message options are
+ available for `passport.authenticate()`:
+
+* `badRequestMessage`: missing username/password (default: &#x27;Missing credentials&#x27;)
+* `invalidCredentials`: `InvalidCredentialsError`, `NoSuchObjectError`, and `/no such user/i` LDAP errors (default: &#x27;Invalid
+ username/password&#x27;)
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
